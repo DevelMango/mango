@@ -124,7 +124,7 @@ public:
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1551824832;
-        genesis.nBits = 0x1e00fff0;
+        genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 30560576;
 		
 		
@@ -199,11 +199,11 @@ public:
         strDeveloperFeePayee = "---";
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1539376476;
-        genesis.nNonce = 30298435;
+        genesis.nTime = 1551824832;
+        genesis.nNonce = 20746832;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000000a42cd2009da45c3860c80f688d35add3579c23602b5469b4a7317a9a25"));
+        assert(hashGenesisBlock == uint256("0x000001b115bb2bc6e864c4a91cdf2db82562ce4e5f62623b06f6929d091a3475"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -264,14 +264,14 @@ public:
         nTargetTimespan = 5 * 60; // mango: 5 minutes
         nTargetSpacing = 1 * 60;  // mango: 1 minute
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1539376476;
-        genesis.nBits = 0x1e00fff0;
-        genesis.nNonce = 30298435;
+        genesis.nTime = 1551824832;
+        genesis.nBits = 0x1e0ffff0;
+        genesis.nNonce = 30560576;
         strDeveloperFeePayee = "---";
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000000a42cd2009da45c3860c80f688d35add3579c23602b5469b4a7317a9a25"));
+        assert(hashGenesisBlock == uint256("0x0000013db8091c3a4614371dc18f3ff96d1d02f10fc2c120cc9a6120aa202b90"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
