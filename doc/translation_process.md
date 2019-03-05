@@ -9,16 +9,16 @@ Transifex is setup to monitor the GitHub repo for updates, and when code contain
 
 Multiple language support is critical in assisting mango's global adoption, and growth. One of mango's greatest strengths is cross-border money transfers, any help making that easier is greatly appreciated.
 
-See the [Transifex mango project](https://www.transifex.com/enmanetcoin/mango-project-translations/) to assist in translations.
+See the [Transifex mango project](https://www.transifex.com/mangocoin/mango-project-translations/) to assist in translations.
 
 ### Writing code with translations
 
 We use automated scripts to help extract translations in both Qt, and non-Qt source files. It is rarely necessary to manually edit the files in `src/qt/locale/`. The translation source files must adhere to the following format:
-`enmanet_xx_YY.ts or enmanet_xx.ts`
+`mango_xx_YY.ts or mango_xx.ts`
 
-`src/qt/locale/enmanet_en.ts` is treated in a special way. It is used as the source for all other translations. Whenever a string in the source code is changed, this file must be updated to reflect those changes. A custom script is used to extract strings from the non-Qt parts. This script makes use of `gettext`, so make sure that utility is installed (ie, `apt-get install gettext` on Ubuntu/Debian). Once this has been updated, `lupdate` (included in the Qt SDK) is used to update `enmanet_en.ts`.
+`src/qt/locale/mango_en.ts` is treated in a special way. It is used as the source for all other translations. Whenever a string in the source code is changed, this file must be updated to reflect those changes. A custom script is used to extract strings from the non-Qt parts. This script makes use of `gettext`, so make sure that utility is installed (ie, `apt-get install gettext` on Ubuntu/Debian). Once this has been updated, `lupdate` (included in the Qt SDK) is used to update `mango_en.ts`.
 
-To automatically regenerate the `enmanet_en.ts` file, run the following commands:
+To automatically regenerate the `mango_en.ts` file, run the following commands:
 
 ```sh
 cd src/
@@ -42,7 +42,7 @@ When an updated source file is merged into the GitHub repo, Transifex will autom
 To create the pull-request, use the following commands:
 
 ```
-git add src/qt/enmanetstrings.cpp src/qt/locale/enmanet_en.ts
+git add src/qt/mangostrings.cpp src/qt/locale/mango_en.ts
 git commit
 ```
 
@@ -50,7 +50,7 @@ git commit
 
 Visit the [Transifex Signup](https://www.transifex.com/signup/) page to create an account. Take note of your username and password, as they will be required to configure the command-line tool.
 
-You can find the mango translation project at [https://www.transifex.com/enmanetcoin/mango-project-translations/](https://www.transifex.com/enmanetcoin/mango-project-translations/).
+You can find the mango translation project at [https://www.transifex.com/mangocoin/mango-project-translations/](https://www.transifex.com/mangocoin/mango-project-translations/).
 
 ### Installing the Transifex client command-line tool
 
@@ -83,10 +83,10 @@ The Transifex mango project config file is included as part of the repo. It can 
 To assist in updating translations, we have created a script to help.
 
 1. `python contrib/devtools/update-translations.py`
-2. Update `src/qt/enmanet_locale.qrc` manually or via
-   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(enmanet_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
+2. Update `src/qt/mango_locale.qrc` manually or via
+   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(mango_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
 3. Update `src/Makefile.qt.include` manually or via
-   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(enmanet_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'`
+   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(mango_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'`
 4. `git add` new translations from `src/qt/locale/`
 
 **Do not directly download translations** one by one from the Transifex website, as we do a few post-processing steps before committing the translations.
@@ -95,7 +95,7 @@ To assist in updating translations, we have created a script to help.
 
 When new plurals are added to the source file, it's important to do the following steps:
 
-1. Open `enmanet_en.ts` in Qt Linguist (included in the Qt SDK)
+1. Open `mango_en.ts` in Qt Linguist (included in the Qt SDK)
 2. Search for `%n`, which will take you to the parts in the translation that use plurals
 3. Look for empty `English Translation (Singular)` and `English Translation (Plural)` fields
 4. Add the appropriate strings for the singular and plural form of the base string
@@ -105,11 +105,11 @@ When new plurals are added to the source file, it's important to do the followin
 
 ### Translating a new language
 
-To create a new language template, you will need to edit the languages manifest file `src/qt/enmanet_locale.qrc` and add a new entry. Below is an example of the English language entry.
+To create a new language template, you will need to edit the languages manifest file `src/qt/mango_locale.qrc` and add a new entry. Below is an example of the English language entry.
 
 ```xml
 <qresource prefix="/translations">
-    <file alias="en">locale/enmanet_en.qm</file>
+    <file alias="en">locale/mango_en.qm</file>
     ...
 </qresource>
 ```

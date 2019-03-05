@@ -1,7 +1,7 @@
 Mac OS X Build Instructions and Notes
 =====================================
 
-This guide will show you how to build enmanetd (headless client) for OSX.
+This guide will show you how to build mangod (headless client) for OSX.
 
 Notes
 -----
@@ -42,11 +42,11 @@ Instructions: Homebrew
         brew install autoconf automake berkeley-db4 libtool boost@1.55 miniupnpc openssl pkg-config protobuf qt5
         brew link --force boost@1.55
 
-### Building `enmanetd`
+### Building `mangod`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/enmanetcoin/mango-core
+        git clone https://github.com/mangocoin/mango-core
         cd mango-core
 
 2. Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
@@ -54,7 +54,7 @@ Instructions: Homebrew
         export LDFLAGS=-L/usr/local/opt/openssl/lib
         export CPPFLAGS=-I/usr/local/opt/openssl/include
 
-3. Build enmanetd:
+3. Build mangod:
 
         ./autogen.sh
         ./configure --with-gui=qt5
@@ -64,7 +64,7 @@ Instructions: Homebrew
 
         make check
 
-5. (Optional) You can also install enmanetd to your path:
+5. (Optional) You can also install mangod to your path:
 
         make install
 
@@ -88,11 +88,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 Creating a release build
 ------------------------
 
-You can ignore this section if you are building `enmanetd` for your own use.
+You can ignore this section if you are building `mangod` for your own use.
 
-enmanetd/mango-cli binaries are not included in the mango-Qt.app bundle.
+mangod/mango-cli binaries are not included in the mango-Qt.app bundle.
 
-If you are building `enmanetd` or `mango-qt` for others, your build machine should be set up
+If you are building `mangod` or `mango-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -107,13 +107,13 @@ bundle is packaged and signed to create the .dmg disk image that is distributed.
 Running
 -------
 
-It's now available at `./enmanetd`, provided that you are still in the `src`
+It's now available at `./mangod`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./enmanetd` to get the filename where it should be put, or just try these
+Run `./mangod` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=enmanetrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/mango/mango.conf"
+    echo -e "rpcuser=mangorpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/mango/mango.conf"
     chmod 600 "/Users/${USER}/Library/Application Support/mango/mango.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
@@ -125,6 +125,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands
 --------------
 
-    ./enmanetd -daemon # to start the mango daemon.
+    ./mangod -daemon # to start the mango daemon.
     ./mango-cli --help  # for a list of command-line options.
     ./mango-cli help    # When the daemon is running, to get a list of RPC commands

@@ -47,7 +47,7 @@ make install
 
 Now lets run the mango daemon:
 
-enmanetd &
+mangod &
 press enter
 
 
@@ -102,7 +102,7 @@ mn1 127.0.0.1:16555 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84
 set up your ip, masternode privkey, and TXID (of the 1000 EMN)
 
 
-now shutdown enmanetd process and restart it
+now shutdown mangod process and restart it
 
 lets list all proccesses:
 
@@ -113,11 +113,11 @@ find the proccess number
 
 kill (process number)
 
-now restart enmanetd
+now restart mangod
 
 and lets start it again:
 
-enmanetd &
+mangod &
 
 
 Now let check our masternode status:

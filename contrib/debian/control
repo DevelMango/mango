@@ -22,11 +22,11 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage:http://bit.enmanets/
-Vcs-Git: git://github.com/enmanetcoin/mango-core
-Vcs-Browser: http://github.com/enmanetcoin/mango-core
+Homepage:http://bit.mangos/
+Vcs-Git: git://github.com/mangocoin/mango-core
+Vcs-Browser: http://github.com/mangocoin/mango-core
 
-Package: enmanetd
+Package: mangod
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -39,7 +39,7 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, enmanetd, and the CLI tool
+ This package provides the daemon, mangod, and the CLI tool
  mango-cli to interact with the daemon.
 
 Package: mango-qt

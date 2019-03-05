@@ -1,2 +1,2 @@
-usr/local/bin/enmanetd usr/bin
+usr/local/bin/mangod usr/bin
 usr/local/bin/mango-cli usr/bin

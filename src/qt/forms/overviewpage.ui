@@ -473,7 +473,7 @@ min-height:35px;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">qproperty-alignment: 'AlignVBottom | AlignLeft';
-background-image: url(':/images/enmanetlogo_name');
+background-image: url(':/images/mangologo_name');
 background-repeat: no-repeat;
 font-weight: bold;</string>
          </property>

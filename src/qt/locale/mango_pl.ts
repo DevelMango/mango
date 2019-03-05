@@ -188,7 +188,7 @@
         <translation>Portfel zaszyfrowany</translation>
     </message>
     <message>
-        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your enmanets from being stolen by malware infecting your computer.</source>
+        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mangos from being stolen by malware infecting your computer.</source>
         <translation>mango zostanie teraz zamknięty aby zakończyć proces szyfrowania. Pamiętaj, że zaszyfrowanie portfela nie gwarantuje pełnej ochrony przed kradzieżą twoich monet przez złośliwe oprogramowanie.</translation>
     </message>
     <message>
@@ -1263,9 +1263,9 @@ Adres: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</source>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</source>
         <translation>mango Core nie został przetłumaczony na twój język? Tłumaczenie jest niepełne lub niepoprawne? Możesz pomóc nam tłumaczyć tutaj:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3710,10 +3710,10 @@ https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
         <translation>Produkt ten zawiera oprogramowanie stworzone przez OpenSSL Project do użytku w OpenSSL Toolkit &lt;https://www.openssl.org/&gt;, oprogramowanie krptograficzne napisane przez Eric Young oraz oprogramowanie UPnP napisane przez Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use enmanetd, or the -server option to mango-qt, you must set an rpcpassword in the configuration file:
+        <source>To use mangod, or the -server option to mango-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=enmanetrpc
+rpcuser=mangorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3721,10 +3721,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "mango Alert" admin@foo.com
 </source>
-        <translation>Aby używać enmanetd, lub opcje -server w kliencie mango-qt, musisz ustawić hasło rpc w pliku konfiguracji:
+        <translation>Aby używać mangod, lub opcje -server w kliencie mango-qt, musisz ustawić hasło rpc w pliku konfiguracji:
 %s
 Zalecane jest abyś użył te o to losowo stworzone hasło
-rpcuser=enmanetrpc
+rpcuser=mangorpc
 rpcpassword=%s
 (Nie musisz pamiętać tego hasła)
 Twoje hasło NIE MOŻE być takie samo jak twój login.

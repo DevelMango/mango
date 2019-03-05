@@ -34,7 +34,7 @@ env:
     - REASON=Linux32 HOST=i686-pc-linux-gnu PACKAGES="g++-multilib bc python3-zmq" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports LDFLAGS=-static-libstdc++" USE_SHELL="/bin/dash" PYZMQ=true
 # Win64
     - REASON=Win64 HOST=x86_64-w64-mingw32 DPKG_ADD_ARCH="i386" PACKAGES="python3 nsis g++-mingw-w64-x86-64 wine1.6 bc" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-reduce-exports"
-# enmanetd
+# mangod
     - REASON=Linux64 HOST=x86_64-unknown-linux-gnu PACKAGES="bc python3-zmq" DEP_OPTS="NO_UPNP=1 DEBUG=1" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports CPPFLAGS=-DDEBUG_LOCKORDER" PYZMQ=true
 # No wallet
 #    - REASON=NodeOnly HOST=x86_64-unknown-linux-gnu PACKAGES="python3" DEP_OPTS="NO_WALLET=1" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"
@@ -82,7 +82,7 @@ after_success:
   - if [ "$REASON" = "Win64" ]; then cd $OUTDIR && cp -a bin mango-Core-$VERSION && rm mango-Core-$VERSION/*test* && zip -r mango-Core-$VERSION.zip mango-Core-$VERSION; fi
   - if [ "$REASON" = "Linux32" ]; then cd $OUTDIR && cp -a bin mango-Core-$VERSION && rm mango-Core-$VERSION/*test* && zip -r mango-Core-$VERSION.zip mango-Core-$VERSION; fi
   - if [ "$REASON" = "Linux64" ]; then cd $OUTDIR && cp -a bin mango-Core-$VERSION && rm mango-Core-$VERSION/*test* && zip -r mango-Core-$VERSION.zip mango-Core-$VERSION; fi
-  - if [ "$REASON" = "MacOSX" ]; then mkdir -p $OUTDIR && cd $OUTDIR && cp /home/travis/build/enmanetcoin/mango-core/bitcoin-x86_64-apple-darwin11/mango-Core.dmg mango-Core-$VERSION.dmg; fi
+  - if [ "$REASON" = "MacOSX" ]; then mkdir -p $OUTDIR && cd $OUTDIR && cp /home/travis/build/mangocoin/mango-core/bitcoin-x86_64-apple-darwin11/mango-Core.dmg mango-Core-$VERSION.dmg; fi
 deploy:
   provider: releases
   api_key:

@@ -16,7 +16,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.enmanetcoin.mango-Qt";
+        return @"org.mangocoin.mango-Qt";
     } else {
         return [self __bundleIdentifier];
     }

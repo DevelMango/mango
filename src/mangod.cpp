@@ -26,7 +26,7 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called mango (http://www.enmanetcoin.org),
+ * This is the developer documentation of the reference client for an experimental new digital currency called mango (http://www.mangocoin.org),
  * which enables instant payments to anyone, anywhere in the world. mango uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
@@ -77,7 +77,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  enmanetd [options]                     " + _("Start mango Core Daemon") + "\n";
+                        "  mangod [options]                     " + _("Start mango Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -117,7 +117,7 @@ bool AppInit(int argc, char* argv[])
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in enmanetd anymore. Use the mango-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in mangod anymore. Use the mango-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
@@ -176,7 +176,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect enmanetd signal handlers
+    // Connect mangod signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

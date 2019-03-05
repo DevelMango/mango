@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between mango-cli and enmanetd)
+ * CBaseChainParams defines the base parameters (shared between mango-cli and mangod)
  * of a given instance of the mango system.
  */
 class CBaseChainParams

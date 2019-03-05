@@ -88,7 +88,7 @@ namespace // Anon namespace
 //
 static QString ipcServerName()
 {
-    QString name("enmanetQt");
+    QString name("mangoQt");
 
     // Append a simple hash of the datadir
     QString ddir(QString::fromStdString(GetDataDir().string()));

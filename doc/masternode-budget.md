@@ -15,7 +15,7 @@ Budgets go through a series of stages before being paid:
 Prepare collateral transaction
 ------------------------------
 
-mnbudget prepare <proposal-name> <url> <payment_count> <block_start> <enmanet_address> <monthly_payment_xmx>
+mnbudget prepare <proposal-name> <url> <payment_count> <block_start> <mango_address> <monthly_payment_xmx>
 
 Example:
 
@@ -32,7 +32,7 @@ In this transaction we prepare collateral for "_cool-project_". This proposal wi
 Submit proposal to network
 --------------------------
 
-mnbudget submit <proposal-name> <url> <payment_count> <block_start> <enmanet_address> <monthly_payment_xmx> <collateral_hash>
+mnbudget submit <proposal-name> <url> <payment_count> <block_start> <mango_address> <monthly_payment_xmx> <collateral_hash>
 
 Example:
 

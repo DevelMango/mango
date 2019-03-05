@@ -4,7 +4,7 @@ mango Core
 Setup
 -----
 
-[mango Core]http://bit.enmanets/ is the original mango client and it builds the backbone of the network. However, it downloads and stores the entire history of mango transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[mango Core]http://bit.mangos/ is the original mango client and it builds the backbone of the network. However, it downloads and stores the entire history of mango transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 -------
@@ -14,8 +14,8 @@ The following are some helpful notes on how to run mango on your native platform
 
 Unpack the files into a directory and run:
 
-- bin/32/mango-qt (GUI, 32-bit) or bin/32/enmanetd (headless, 32-bit)
-- bin/64/mango-qt (GUI, 64-bit) or bin/64/enmanetd (headless, 64-bit)
+- bin/32/mango-qt (GUI, 32-bit) or bin/32/mangod (headless, 32-bit)
+- bin/64/mango-qt (GUI, 64-bit) or bin/64/mangod (headless, 64-bit)
 
 ### Windows
 
@@ -44,7 +44,7 @@ The following are developer notes on how to build mango on your native platform.
 Development
 -----------
 
-The mango repo's [root README](https://github.com/enmanetcoin/mango-core/blob/master/README.md) contains relevant information on the development process and automated testing.
+The mango repo's [root README](https://github.com/mangocoin/mango-core/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="enmanetSupply">
+    <widget class="QLabel" name="mangoSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="enmanetDemand">
+    <widget class="QLabel" name="mangoDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="Buyenmanet">
+    <widget class="QPushButton" name="Buymango">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1707,7 +1707,7 @@
       <string>mango</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputenmanet">
+    <widget class="QLineEdit" name="UnitsInputmango">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellenmanetBTN">
+    <widget class="QPushButton" name="SellmangoBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1782,7 +1782,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="enmanetAvailableLabel">
+       <widget class="QLabel" name="mangoAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelenmanet">
+       <widget class="QLabel" name="labelmango">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="enmanetBalanceLabel">
+    <widget class="QLabel" name="mangoBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="enmanetAvailableLabel_2">
+    <widget class="QLabel" name="mangoAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2835,7 +2835,7 @@
       <string>mango Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="enmanetPendingLabel">
+    <widget class="QLabel" name="mangoPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -3155,7 +3155,7 @@
        <string notr="true">border: 1px solid #61696c;margin-left:4px;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnConvertenmanet">
+     <widget class="QPushButton" name="btnConvertmango">
       <property name="geometry">
        <rect>
         <x>260</x>

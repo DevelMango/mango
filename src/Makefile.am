@@ -64,7 +64,7 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += enmanetd
+  bin_PROGRAMS += mangod
 endif
 
 if BUILD_BITCOIN_UTILS
@@ -179,7 +179,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between enmanetd and mango-qt
+# server: shared between mangod and mango-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(BOOST_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -223,7 +223,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between enmanetd and mango-qt, but only linked
+# wallet: shared between mangod and mango-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -318,7 +318,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between enmanetd, and mango-qt and non-server tools
+# common: shared between mangod, and mango-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   allocators.cpp \
@@ -384,7 +384,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-enmanetd_LDADD = \
+mangod_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -395,40 +395,40 @@ enmanetd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-enmanetd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+mangod_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-enmanetd_LDADD += libbitcoin_wallet.a
+mangod_LDADD += libbitcoin_wallet.a
 endif
-enmanetd_SOURCES = enmanetd.cpp
+mangod_SOURCES = mangod.cpp
 #
 
 if TARGET_WINDOWS
-enmanetd_SOURCES += enmanetd-res.rc
+mangod_SOURCES += mangod-res.rc
 endif
 
-enmanetd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-enmanetd_CPPFLAGS = $(BITCOIN_INCLUDES)
-enmanetd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+mangod_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+mangod_CPPFLAGS = $(BITCOIN_INCLUDES)
+mangod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # mango-cli binary #
-enmanet_cli_LDADD = \
+mango_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-enmanet_cli_SOURCES = \
+mango_cli_SOURCES = \
   mango-cli.cpp
 
-enmanet_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+mango_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
 # mango-tx binary #
-enmanet_tx_LDADD = \
+mango_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -437,15 +437,15 @@ enmanet_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-enmanet_tx_SOURCES = mango-tx.cpp
-enmanet_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+mango_tx_SOURCES = mango-tx.cpp
+mango_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-enmanet_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+mango_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-enmanet_cli_SOURCES += mango-cli-res.rc
+mango_cli_SOURCES += mango-cli-res.rc
 endif
-enmanet_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+mango_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

@@ -139,14 +139,14 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 ### Run
 
-Then you can either run the command-line daemon using `src/enmanetd` and `src/mango-cli`, or you can run the Qt GUI using `src/qt/mango-qt`
+Then you can either run the command-line daemon using `src/mangod` and `src/mango-cli`, or you can run the Qt GUI using `src/qt/mango-qt`
 
 For in-depth description of Sparknet and how to use mango for interacting with contracts, please see [sparknet-guide](doc/sparknet-guide.md).
 
 License
 -------
 
-enmanetcore is GPLv3 licensed.
+mangocore is GPLv3 licensed.
 
 Development Process
 -------------------

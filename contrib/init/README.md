@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: enmanetd.service
-Upstart: enmanetd.conf
-OpenRC:  enmanetd.openrc
-         enmanetd.openrcconf
-CentOS:  enmanetd.init
+SystemD: mangod.service
+Upstart: mangod.conf
+OpenRC:  mangod.openrc
+         mangod.openrcconf
+CentOS:  mangod.init
 
 have been made available to assist packagers in creating node packages here.
 

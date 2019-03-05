@@ -176,7 +176,7 @@
         <translation>Plånbok krypterad</translation>
     </message>
     <message>
-        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your enmanets from being stolen by malware infecting your computer.</source>
+        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mangos from being stolen by malware infecting your computer.</source>
         <translation>mango kommer nu att färdigställa krypteringsprocessen. Kom ihåg att krypteringen av din plånbok inte kan skydda dig helt och hållet från att dina mango stjäls av skadeprogram som har infekterat din dator.</translation>
     </message>
     <message>
@@ -1106,9 +1106,9 @@ Adress: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</source>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</source>
         <translation>Fattas språk eller är det en ofullständig översättning? Hjälp till att bidra med översättningar här:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1436,7 +1436,7 @@ https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
     </message>
     <message>
         <source>Open the mango debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna enmanets avsökningsloggfil från den nuvarande datakatalogen. Detta kan ta ett par sekunder för stora loggfiler.</translation>
+        <translation>Öppna mangos avsökningsloggfil från den nuvarande datakatalogen. Detta kan ta ett par sekunder för stora loggfiler.</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1508,7 +1508,7 @@ https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
     </message>
     <message>
         <source>Welcome to the mango RPC console.</source>
-        <translation>Välkommen till enmanets RPC-konsol.</translation>
+        <translation>Välkommen till mangos RPC-konsol.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>

@@ -1,12 +1,12 @@
-.TH enmanetD "1" "February 2017" "enmanetd 2.1.4.1"
+.TH mangoD "1" "February 2017" "mangod 2.1.4.1"
 .SH NAME
 mango \- peer-to-peer network based digital currency
 .SH SYNOPSIS
-enmanetd [options] <command> [params]
+mangod [options] <command> [params]
 .TP
-enmanetd [options] help <command> \- Get help for a command
+mangod [options] help <command> \- Get help for a command
 .SH DESCRIPTION
-This  manual page documents the enmanetd program. mango is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
+This  manual page documents the mangod program. mango is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
 
 mango can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the mango system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
 
@@ -84,10 +84,10 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'enmanetaddress'\fR
+\fBgetaccount 'mangoaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'enmanetaddress' ['account']\fR
+\fBsetaccount 'mangoaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
@@ -129,8 +129,8 @@ Returns a new mango address for receiving payments. If 'account' is specified (r
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'enmanetaddress' ['minconf=1']\fR
-Returns the total amount received by 'enmanetaddress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'mangoaddress' ['minconf=1']\fR
+Returns the total amount received by 'mangoaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -182,21 +182,21 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'enmanetaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'enmanetaddress'. This method will fail if there is less than amount mngo with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'mangoaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'mangoaddress'. This method will fail if there is less than amount mngo with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
-\fBsendtoaddress 'enmanetaddress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'enmanetaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'mangoaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'mangoaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
 Stops the mango server.
 .TP
-\fBvalidateaddress 'enmanetaddress'\fR
-Checks that 'enmanetaddress' looks like a proper mango address. Returns an object containing:
+\fBvalidateaddress 'mangoaddress'\fR
+Checks that 'mangoaddress' looks like a proper mango address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : enmanetaddress.
+    "address" : mangoaddress.
 
     *note: ismine and address are only returned if the address is valid.
 

@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED* enmanet_strings[] = {
+static const char UNUSED* mango_strings[] = {
     QT_TRANSLATE_NOOP("mango-core", ""
                                    "(1 = keep tx meta data e.g. account owner and payment request information, 2 "
                                    "= drop tx meta data)"),
@@ -149,11 +149,11 @@ static const char UNUSED* enmanet_strings[] = {
                                    "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
                                    "written by Eric Young and UPnP software written by Thomas Bernard."),
     QT_TRANSLATE_NOOP("mango-core", ""
-                                   "To use enmanetd, or the -server option to mango-qt, you must set an rpcpassword "
+                                   "To use mangod, or the -server option to mango-qt, you must set an rpcpassword "
                                    "in the configuration file:\n"
                                    "%s\n"
                                    "It is recommended you use the following random password:\n"
-                                   "rpcuser=enmanetrpc\n"
+                                   "rpcuser=mangorpc\n"
                                    "rpcpassword=%s\n"
                                    "(you do not need to remember this password)\n"
                                    "The username and password MUST NOT be the same.\n"

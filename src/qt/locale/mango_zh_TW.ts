@@ -188,7 +188,7 @@
         <translation>錢包已加密</translation>
     </message>
     <message>
-        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your enmanets from being stolen by malware infecting your computer.</source>
+        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mangos from being stolen by malware infecting your computer.</source>
         <translation>達世幣軟體現在要關閉，好完成加密程序。請注意，加密錢包不能完全防止入侵你的電腦的惡意程式偷取達世幣。</translation>
     </message>
     <message>
@@ -1259,9 +1259,9 @@ Address: %4
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</source>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</source>
         <translation>缺少相關語言或翻譯不完整？請到這裡協助翻譯
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>

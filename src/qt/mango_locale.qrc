@@ -1,20 +1,20 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource prefix="/translations">
-        <file alias="bg">locale/enmanet_bg.qm</file>
-        <file alias="de">locale/enmanet_de.qm</file>
-        <file alias="en">locale/enmanet_en.qm</file>
-        <file alias="es">locale/enmanet_es.qm</file>
-        <file alias="fi">locale/enmanet_fi.qm</file>
-        <file alias="fr">locale/enmanet_fr.qm</file>
-        <file alias="it">locale/enmanet_it.qm</file>
-        <file alias="ja">locale/enmanet_ja.qm</file>
-        <file alias="pl">locale/enmanet_pl.qm</file>
-        <file alias="pt">locale/enmanet_pt.qm</file>
-        <file alias="ru">locale/enmanet_ru.qm</file>
-        <file alias="sk">locale/enmanet_sk.qm</file>
-        <file alias="sv">locale/enmanet_sv.qm</file>
-        <file alias="vi">locale/enmanet_vi.qm</file>
-        <file alias="zh_CN">locale/enmanet_zh_CN.qm</file>
-        <file alias="zh_TW">locale/enmanet_zh_TW.qm</file>
+        <file alias="bg">locale/mango_bg.qm</file>
+        <file alias="de">locale/mango_de.qm</file>
+        <file alias="en">locale/mango_en.qm</file>
+        <file alias="es">locale/mango_es.qm</file>
+        <file alias="fi">locale/mango_fi.qm</file>
+        <file alias="fr">locale/mango_fr.qm</file>
+        <file alias="it">locale/mango_it.qm</file>
+        <file alias="ja">locale/mango_ja.qm</file>
+        <file alias="pl">locale/mango_pl.qm</file>
+        <file alias="pt">locale/mango_pt.qm</file>
+        <file alias="ru">locale/mango_ru.qm</file>
+        <file alias="sk">locale/mango_sk.qm</file>
+        <file alias="sv">locale/mango_sv.qm</file>
+        <file alias="vi">locale/mango_vi.qm</file>
+        <file alias="zh_CN">locale/mango_zh_CN.qm</file>
+        <file alias="zh_TW">locale/mango_zh_TW.qm</file>
     </qresource>
 </RCC>

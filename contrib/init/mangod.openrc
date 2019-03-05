@@ -5,21 +5,21 @@
 if [ -d "/var/lib/mango/.mango" ]; then
 	BITCOIND_DEFAULT_DATADIR="/var/lib/mango/.mango"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/enmanetd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/mangod"
 fi
 
 BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/mango/mango.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/enmanetd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/enmanetd.pid}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/mangod}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/mangod.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
 BITCOIND_USER=${BITCOIND_USER:-mango}
 BITCOIND_GROUP=${BITCOIND_GROUP:-mango}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/enmanetd}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/mangod}
 
 name="mango Core Daemon"
 description="mango crypto-currency p2p network daemon"
 
-command="/usr/bin/enmanetd"
+command="/usr/bin/mangod"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run enmanetd."
+		eerror "ERROR: You must set a secure rpcpassword to run mangod."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "

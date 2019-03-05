@@ -7,13 +7,13 @@ User=mango
 Group=mango
 
 Type=forking
-PIDFile=/var/lib/enmanetd/enmanetd.pid
+PIDFile=/var/lib/mangod/mangod.pid
 
-ExecStart=/usr/bin/enmanetd -daemon -pid=/var/lib/enmanetd/enmanetd.pid \
-          -conf=/etc/mango/mango.conf -datadir=/var/lib/enmanetd
+ExecStart=/usr/bin/mangod -daemon -pid=/var/lib/mangod/mangod.pid \
+          -conf=/etc/mango/mango.conf -datadir=/var/lib/mangod
 
 ExecStop=-/usr/bin/mango-cli -conf=/etc/mango/mango.conf \
-         -datadir=/var/lib/enmanetd stop
+         -datadir=/var/lib/mangod stop
 
 Restart=always
 PrivateTmp=true

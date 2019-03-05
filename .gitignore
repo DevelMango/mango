@@ -7,11 +7,11 @@ reset-files.bash
 
 *.exe
 src/mango
-src/enmanetd
+src/mangod
 src/mango-cli
 src/mango-tx
-src/test/test_enmanet
-src/qt/test/test_enmanet-qt
+src/test/test_mango
+src/qt/test/test_mango-qt
 
 # autoreconf
 Makefile.in
@@ -102,7 +102,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_enmanet.coverage/
+test_mango.coverage/
 total.coverage/
 coverage_percent.txt
 

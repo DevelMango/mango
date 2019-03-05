@@ -51,7 +51,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "mango"
-#define QAPP_ORG_DOMAIN "http://bit.enmanets/"
+#define QAPP_ORG_DOMAIN "http://bit.mangos/"
 #define QAPP_APP_NAME_DEFAULT "mango-Qt"
 #define QAPP_APP_NAME_TESTNET "mango-Qt-testnet"
 

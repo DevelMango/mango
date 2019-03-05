@@ -32,7 +32,7 @@
   <string>mango-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>org.enmanetcoin.mango-Qt</string>
+  <string>org.mangocoin.mango-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.enmanetcoin.enmanetPayment</string>
+      <string>org.mangocoin.mangoPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>mango</string>
@@ -52,7 +52,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.enmanetcoin.paymentrequest</string>
+      <string>org.mangocoin.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>mango payment request</string>
       <key>UTTypeConformsTo</key>
@@ -65,7 +65,7 @@
         <string>application/x-mango-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>enmanetpaymentrequest</string>
+          <string>mangopaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.enmanetcoin.paymentrequest</string>
+        <string>org.mangocoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

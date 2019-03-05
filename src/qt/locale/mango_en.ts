@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+12"/>
-        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your enmanets from being stolen by malware infecting your computer.</source>
+        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mangos from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2199,7 +2199,7 @@ Please check the address and try again.</source>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/enmanetcoin/mango-project-translations</source>
+https://www.transifex.com/mangocoin/mango-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5002,7 +5002,7 @@ https://www.transifex.com/enmanetcoin/mango-project-translations</source>
 <context>
     <name>mango-core</name>
     <message>
-        <location filename="../enmanetstrings.cpp" line="+12"/>
+        <location filename="../mangostrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5243,10 +5243,10 @@ https://www.transifex.com/enmanetcoin/mango-project-translations</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>To use enmanetd, or the -server option to mango-qt, you must set an rpcpassword in the configuration file:
+        <source>To use mangod, or the -server option to mango-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=enmanetrpc
+rpcuser=mangorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

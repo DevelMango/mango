@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "mango"
-            VALUE "FileDescription",    "enmanetd (OSS daemon/client for mango)"
+            VALUE "FileDescription",    "mangod (OSS daemon/client for mango)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "enmanetd"
+            VALUE "InternalName",       "mangod"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "enmanetd.exe"
-            VALUE "ProductName",        "enmanetd"
+            VALUE "OriginalFilename",   "mangod.exe"
+            VALUE "ProductName",        "mangod"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

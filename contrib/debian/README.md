@@ -1,8 +1,8 @@
 Debian
 ======
 
-This directory contains files used to package enmanetd/mango-qt
-for Debian-based Linux systems. If you compile enmanetd/mango-qt yourself, there are some useful files here.
+This directory contains files used to package mangod/mango-qt
+for Debian-based Linux systems. If you compile mangod/mango-qt yourself, there are some useful files here.
 
 ## mango: URI support ##
 
@@ -15,6 +15,6 @@ To install:
 
 If you build yourself, you will either need to modify the paths in
 the .desktop file or copy or symlink your mango-qt binary to `/usr/bin`
-and the `../../share/pixmaps/enmanet128.png` to `/usr/share/pixmaps`
+and the `../../share/pixmaps/mango128.png` to `/usr/share/pixmaps`
 
 mango-qt.protocol (KDE)

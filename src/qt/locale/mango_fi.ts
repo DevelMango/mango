@@ -188,8 +188,8 @@
         <translation>Lompakko salattu</translation>
     </message>
     <message>
-        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your enmanets from being stolen by malware infecting your computer.</source>
-        <translation>mango sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää enmanetiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
+        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mangos from being stolen by malware infecting your computer.</source>
+        <translation>mango sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää mangoiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -1264,9 +1264,9 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</source>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</source>
         <translation>Puuttuuko sopiva kieli tai käännös on kesken? Auta käännöstyössä täällä:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1570,7 +1570,7 @@ https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
     </message>
     <message>
         <source>Cannot start mango: click-to-pay handler</source>
-        <translation>Ei voi käynnistää enmanetia: click-to-pay handler</translation>
+        <translation>Ei voi käynnistää mangoia: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -3278,7 +3278,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Lähetä enmaneteja</translation>
+        <translation>Lähetä mangoeja</translation>
     </message>
     <message>
         <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 mngo.</source>
@@ -3717,10 +3717,10 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 Käännös päivitetty: 1.9.2015 by AjM.</translation>
     </message>
     <message>
-        <source>To use enmanetd, or the -server option to mango-qt, you must set an rpcpassword in the configuration file:
+        <source>To use mangod, or the -server option to mango-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=enmanetrpc
+rpcuser=mangorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3728,10 +3728,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "mango Alert" admin@foo.com
 </source>
-        <translation>Käyttääksesi enmanetd:ia tai -server valintaa mango-qt:lle, sinun tulee asettaa rpc salasana asetustiedostossa:
+        <translation>Käyttääksesi mangod:ia tai -server valintaa mango-qt:lle, sinun tulee asettaa rpc salasana asetustiedostossa:
 %s
 Suositellaan että käytät allaolevaa satunnaista salasanaa:
-rpcuser=enmanetrpc
+rpcuser=mangorpc
 rpcpassword=%s
 (sinun ei tarvitse muistaa tätä salasanaa)
 Käyttäjätunnus ja salasana on oltava ERILAISET.

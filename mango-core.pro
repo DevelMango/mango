@@ -13961,7 +13961,7 @@ SOURCES += src/activemasternode.cpp \
            src/walletdb.cpp \
            src/mango-cli.cpp \
            src/mango-tx.cpp \
-           src/enmanetd.cpp \
+           src/mangod.cpp \
            src/compat/glibc_compat.cpp \
            src/compat/glibc_sanity.cpp \
            src/compat/glibcxx_compat.cpp \
@@ -14048,7 +14048,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/walletview.cpp \
            src/qt/winshutdownmonitor.cpp \
            src/qt/mango.cpp \
-           src/qt/enmanetstrings.cpp \
+           src/qt/mangostrings.cpp \
            src/script/bitcoinconsensus.cpp \
            src/script/interpreter.cpp \
            src/script/script.cpp \
@@ -14091,7 +14091,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_enmanet.cpp \
+           src/test/test_mango.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -14190,20 +14190,20 @@ SOURCES += src/activemasternode.cpp \
            depends/x86_64-pc-linux-gnu/include/X11/Xtrans/Xtranslcl.c \
            depends/x86_64-pc-linux-gnu/include/X11/Xtrans/Xtranssock.c \
            depends/x86_64-pc-linux-gnu/include/X11/Xtrans/Xtransutil.c
-RESOURCES += src/qt/mango.qrc src/qt/enmanet_locale.qrc
-TRANSLATIONS += src/qt/locale/enmanet_bg.ts \
-                src/qt/locale/enmanet_de.ts \
-                src/qt/locale/enmanet_en.ts \
-                src/qt/locale/enmanet_es.ts \
-                src/qt/locale/enmanet_fi.ts \
-                src/qt/locale/enmanet_fr.ts \
-                src/qt/locale/enmanet_it.ts \
-                src/qt/locale/enmanet_ja.ts \
-                src/qt/locale/enmanet_pl.ts \
-                src/qt/locale/enmanet_pt.ts \
-                src/qt/locale/enmanet_ru.ts \
-                src/qt/locale/enmanet_sk.ts \
-                src/qt/locale/enmanet_sv.ts \
-                src/qt/locale/enmanet_vi.ts \
-                src/qt/locale/enmanet_zh_CN.ts \
-                src/qt/locale/enmanet_zh_TW.ts
+RESOURCES += src/qt/mango.qrc src/qt/mango_locale.qrc
+TRANSLATIONS += src/qt/locale/mango_bg.ts \
+                src/qt/locale/mango_de.ts \
+                src/qt/locale/mango_en.ts \
+                src/qt/locale/mango_es.ts \
+                src/qt/locale/mango_fi.ts \
+                src/qt/locale/mango_fr.ts \
+                src/qt/locale/mango_it.ts \
+                src/qt/locale/mango_ja.ts \
+                src/qt/locale/mango_pl.ts \
+                src/qt/locale/mango_pt.ts \
+                src/qt/locale/mango_ru.ts \
+                src/qt/locale/mango_sk.ts \
+                src/qt/locale/mango_sv.ts \
+                src/qt/locale/mango_vi.ts \
+                src/qt/locale/mango_zh_CN.ts \
+                src/qt/locale/mango_zh_TW.ts

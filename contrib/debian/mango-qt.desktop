@@ -7,6 +7,6 @@ Comment[tr]=mango, eşten eşe kriptografik sanal para birimi
 Exec=mango-qt %u
 Terminal=false
 Type=Application
-Icon=enmanet128
+Icon=mango128
 MimeType=x-scheme-handler/mango;
 Categories=Office;Finance;

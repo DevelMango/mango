@@ -188,7 +188,7 @@
         <translation>Ví đã được mã hoá.</translation>
     </message>
     <message>
-        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your enmanets from being stolen by malware infecting your computer.</source>
+        <source>mango will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mangos from being stolen by malware infecting your computer.</source>
         <translation>mango sẽ được đóng lại bây giờ để hoàn thành tiến trình mã hoá. Hãy nhớ rằng mã hoá ví của bạn không thể hoàn toàn bảo vệ mango khỏi bị trộm bởi những mã độc lây nhiễm vào máy tính của bạn.</translation>
     </message>
     <message>
@@ -1263,9 +1263,9 @@ Kiểu: %3
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</source>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</source>
         <translation>Ngôn ngữ ị thiếu hoặc việc dịch chưa hoàn tất? Tham gia dịch giúp tại đây:
-https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
+https://www.transifex.com/mangocoin/mango-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -3710,10 +3710,10 @@ https://www.transifex.com/enmanetcoin/mango-wallet-translations/</translation>
         <translation>Sản phẩm này có kèm theo phần mềm được phát triển bởi dự án OpenSSL để sử dụng các công cụ OpenSSL &lt;https://www.openssl.org/&gt; và phần mềm mã hoá được viết bởi Eric Young và phần mềm UPnP được viết bởi Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use enmanetd, or the -server option to mango-qt, you must set an rpcpassword in the configuration file:
+        <source>To use mangod, or the -server option to mango-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=enmanetrpc
+rpcuser=mangorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3721,10 +3721,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "mango Alert" admin@foo.com
 </source>
-        <translation>Để sử dụng enmanetd, hoặc tuỳ chọn -server với mango-qt, bạn phải đặt một mật khẩu rpcpassword trong tệp cấu hình:
+        <translation>Để sử dụng mangod, hoặc tuỳ chọn -server với mango-qt, bạn phải đặt một mật khẩu rpcpassword trong tệp cấu hình:
 %s
 Gợi ý rằng bạn nên sử dụng những mật khẩu ngẫu nhiên sau:
-rpcuser=enmanetrpc
+rpcuser=mangorpc
 rpcpassword=%s
 (bạn không cần thiết phải nhớ mật khẩu này)
 Username và mật khẩu KHÔNG ĐƯỢC giống nhau.

@@ -3,22 +3,22 @@ EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
 # mango qt core #
 QT_TS = \
-  qt/locale/enmanet_bg.ts \
-  qt/locale/enmanet_de.ts \
-  qt/locale/enmanet_en.ts \
-  qt/locale/enmanet_es.ts \
-  qt/locale/enmanet_fi.ts \
-  qt/locale/enmanet_fr.ts \
-  qt/locale/enmanet_it.ts \
-  qt/locale/enmanet_ja.ts \
-  qt/locale/enmanet_pl.ts \
-  qt/locale/enmanet_pt.ts \
-  qt/locale/enmanet_ru.ts \
-  qt/locale/enmanet_sk.ts \
-  qt/locale/enmanet_sv.ts \
-  qt/locale/enmanet_vi.ts \
-  qt/locale/enmanet_zh_CN.ts \
-  qt/locale/enmanet_zh_TW.ts
+  qt/locale/mango_bg.ts \
+  qt/locale/mango_de.ts \
+  qt/locale/mango_en.ts \
+  qt/locale/mango_es.ts \
+  qt/locale/mango_fi.ts \
+  qt/locale/mango_fr.ts \
+  qt/locale/mango_it.ts \
+  qt/locale/mango_ja.ts \
+  qt/locale/mango_pl.ts \
+  qt/locale/mango_pt.ts \
+  qt/locale/mango_ru.ts \
+  qt/locale/mango_sk.ts \
+  qt/locale/mango_sv.ts \
+  qt/locale/mango_vi.ts \
+  qt/locale/mango_zh_CN.ts \
+  qt/locale/mango_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -107,10 +107,10 @@ QT_MOC = \
   qt/coinmix.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_enmanet.cpp
+QT_QRC_CPP = qt/qrc_mango.cpp
 QT_QRC = qt/mango.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_enmanet_locale.cpp
-QT_QRC_LOCALE = qt/enmanet_locale.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_mango_locale.cpp
+QT_QRC_LOCALE = qt/mango_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -293,7 +293,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/enmanet_logo_horizontal.png \
+  qt/res/images/mango_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -330,7 +330,7 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_enmanet_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_mango_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
@@ -338,45 +338,45 @@ $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
 # mango-qt binary #
-qt_enmanet_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_mango_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_enmanet_qt_SOURCES = qt/mango.cpp
+qt_mango_qt_SOURCES = qt/mango.cpp
 if TARGET_DARWIN
-  qt_enmanet_qt_SOURCES += $(BITCOIN_MM)
+  qt_mango_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_enmanet_qt_SOURCES += $(BITCOIN_RC)
+  qt_mango_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_enmanet_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_mango_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_enmanet_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_mango_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_enmanet_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_mango_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_enmanet_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_mango_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1)
-qt_enmanet_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_enmanet_qt_LIBTOOLFLAGS = --tag CXX
+qt_mango_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_mango_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/enmanetstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/mangostrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/enmanetstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/mangostrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/enmanet_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/mango_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name enmanet_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name mango_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
@@ -388,10 +388,10 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 
 CLEANFILES += $(CLEAN_QT)
 
-enmanet_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_enmanet_qt_OBJECTS) qt/mango-qt$(EXEEXT) $(LIBBITCOINQT)
+mango_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_mango_qt_OBJECTS) qt/mango-qt$(EXEEXT) $(LIBBITCOINQT)
 
-enmanet_qt : qt/mango-qt$(EXEEXT)
+mango_qt : qt/mango-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

@@ -80,8 +80,8 @@
         <file alias="walletFrame">res/images/walletFrame.png</file>
         <file alias="walletFrame_bg">res/images/walletFrame_bg.png</file>
         <file alias="walletFrame_bgdark">res/images/walletFrame_bgdark.png</file>
-        <file alias="enmanet_logo_horizontal">res/images/enmanet_logo_horizontal.png</file>
-        <file alias="enmanetlogo_name">res/images/enmanetlogo_name.png</file>
+        <file alias="mango_logo_horizontal">res/images/mango_logo_horizontal.png</file>
+        <file alias="mangologo_name">res/images/mangologo_name.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="spinner-000">res/movies/spinner-000.png</file>

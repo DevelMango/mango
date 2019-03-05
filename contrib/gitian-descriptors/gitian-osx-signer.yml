@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/enmanetcoin/mango-sigs"
+- "url": "https://github.com/mangocoin/mango-sigs"
   "dir": "signature"
 files:
 - "mango-osx-unsigned.tar.gz"

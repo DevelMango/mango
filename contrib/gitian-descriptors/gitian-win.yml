@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/enmanetcoin/mango-core.git"
+- "url": "https://github.com/mangocoin/mango-core.git"
   "dir": "mango-core"
 files: []
 script: |
