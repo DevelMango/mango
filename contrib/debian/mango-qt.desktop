@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=mango
+Comment=mango P2P Cryptocurrency
+Comment[fr]=mango, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=mango, eşten eşe kriptografik sanal para birimi
+Exec=mango-qt %u
+Terminal=false
+Type=Application
+Icon=enmanet128
+MimeType=x-scheme-handler/mango;
+Categories=Office;Finance;

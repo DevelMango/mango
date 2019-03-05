@@ -1,0 +1,26 @@
+# /etc/conf.d/enmanetd: config file for /etc/init.d/enmanetd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/mango/mango.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/enmanetd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/enmanetd.pid"
+
+# Where to write enmanetd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/enmanetd"
+
+# User and group to own enmanetd process
+#BITCOIND_USER="mango"
+#BITCOIND_GROUP="mango"
+
+# Path to enmanetd executable
+#BITCOIND_BIN="/usr/bin/enmanetd"
+
+# Nice value to run enmanetd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
