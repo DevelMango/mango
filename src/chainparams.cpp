@@ -89,10 +89,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xC9;
-        pchMessageStart[1] = 0x37;
+        pchMessageStart[0] = 0x37;
+        pchMessageStart[1] = 0x9E;
         pchMessageStart[2] = 0xC9;
-        pchMessageStart[3] = 0x9E;
+        pchMessageStart[3] = 0x6d;
         vAlertPubKey = ParseHex("0444d74c0ea8967c7a0457f0ab8532fdd03900377780cb64a83ab8077510805a89eb9100948db395cbf5f0866b36e9697e65c35870134b52b65018a379cf02f035");                        
         nDefaultPort = 16555;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // mango starting difficulty is 1 / 2^12  //20
@@ -109,10 +109,10 @@ public:
         nMasternodeCountDrift = 20;
 		nMasternodeColleteralLimxDev = 1000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 1; // 
-        nMaxMoneyOut = 32000000 * COIN;
+        nMaxMoneyOut = 21000000 * COIN;
         strDeveloperFeePayee = "NZUHxR9hphgwPq76NL5149s1Pzfty9Z6zD";
 
-        const char* pszTimestamp = "Mango Relaunch v2";
+        const char* pszTimestamp = "mango relaunch v2";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -123,18 +123,22 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1539376476;
+        genesis.nTime = 1551824832;
         genesis.nBits = 0x1e00fff0;
-        genesis.nNonce = 30298435;
-
+        genesis.nNonce = 30560576;
+		
+		
+		
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000000a42cd2009da45c3860c80f688d35add3579c23602b5469b4a7317a9a25"));
-        assert(genesis.hashMerkleRoot == uint256("0xb1dea7ae5503e68f06fc77ca18c8ed8fb8bbe841619ef59a61a3f9cdc7582ab7"));
+        assert(hashGenesisBlock == uint256("0x0000013db8091c3a4614371dc18f3ff96d1d02f10fc2c120cc9a6120aa202b90"));
+        assert(genesis.hashMerkleRoot == uint256("0xb1d3fbaf81530f97c1be827c9da86c8fbd889cb25ac853420086d9eb82f086c9"));
 	
-        vSeeds.push_back(CDNSSeedData("165.227.110.22", "165.227.110.22"));  // Official Seed
+       	// New Seed Nodes added 17/02/2019
+        //vSeeds.push_back(CDNSSeedData("157.230.177.23", "157.230.177.23"));  // Seed node 1 : New Jersey	more nodes to be added		
+        //vSeeds.push_back(CDNSSeedData("138.68.104.136", "138.68.104.136"));  // Seed node 1 : Germany	more nodes to be added	
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 63);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 73);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 53);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 54);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 83);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0xAD)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x1E)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
