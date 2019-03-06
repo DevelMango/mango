@@ -10,21 +10,23 @@ mango Coin – A Decentralized Data Sharing Platform, Hosting, and Content Distr
 ## Coin Specifications
 
 | Specification | Value |
-|:-----------|:-----------|
+| NAME | MANGO |
+| TICKER | MNGO |
+| ALGO   | XEVAN |
 | Block Size | `3MB` |
 | Block Time | `120s` |
-| PoW Reward | `12 mngo` |*
+| PoW Reward | `5 mngo` |*
 | Masternode Requirement | `1,000 mngo` |
-| Port | `16555` |
+| Port | `17555` |
   
   
 | Block Reward Distribution | </br>
 |:-----------|:-----------|</br>
 | Block | Reward |</br>
 | 0     | 300,000 (premine) |</br>
-| 1-500 | 5 MNGO |</br>
-| 501-1500 | 10 MNGO |</br>
-| 1501-infinite | 12 MNGO |</br>
+| 1-500 | 3 MNGO |</br>
+| 501-1500 | 4 MNGO |</br>
+| 1501-infinite | 5 MNGO |</br>
 
 </br>
 | Masternode Reward |</br>
