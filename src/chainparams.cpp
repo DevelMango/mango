@@ -94,7 +94,7 @@ public:
         pchMessageStart[2] = 0xC9;
         pchMessageStart[3] = 0x6d;
         vAlertPubKey = ParseHex("0444d74c0ea8967c7a0457f0ab8532fdd03900377780cb64a83ab8077510805a89eb9100948db395cbf5f0866b36e9697e65c35870134b52b65018a379cf02f035");                        
-        nDefaultPort = 16555;
+        nDefaultPort = 17555;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // mango starting difficulty is 1 / 2^12  //20
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -110,7 +110,7 @@ public:
 		nMasternodeColleteralLimxDev = 1000; //Params().MasternodeColleteralLimxDev()
         nModifierUpdateBlock = 1; // 
         nMaxMoneyOut = 21000000 * COIN;
-        strDeveloperFeePayee = "NZUHxR9hphgwPq76NL5149s1Pzfty9Z6zD";
+        strDeveloperFeePayee = "NVPFLzTkuxrsreEkxNbNYM6SvJG7cv8gEQ";
 
         const char* pszTimestamp = "mango relaunch v2";
         CMutableTransaction txNew;
@@ -134,8 +134,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0xb1d3fbaf81530f97c1be827c9da86c8fbd889cb25ac853420086d9eb82f086c9"));
 	
        	// New Seed Nodes added 17/02/2019
-        //vSeeds.push_back(CDNSSeedData("157.230.177.23", "157.230.177.23"));  // Seed node 1 : New Jersey	more nodes to be added		
-        //vSeeds.push_back(CDNSSeedData("138.68.104.136", "138.68.104.136"));  // Seed node 1 : Germany	more nodes to be added	
+        vSeeds.push_back(CDNSSeedData("157.230.223.81 ", "157.230.223.81 "));  // Seed node 1 : New Jersey	more nodes to be added		
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 53);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 54);
@@ -159,7 +158,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04130ec0dd4e2326ae219be3b43c6ddfe08243605b853107228126237f79e24b13543a39099ef994020c39498c3f8061ac5f7c01b5be6f5ed7ffad248e326fccd6";
-        strDarksendPoolDummyAddress = "NZUHxR9hphgwPq76NL5149s1Pzfty9Z6zD";
+        strDarksendPoolDummyAddress = "NVPbvwMsazkvyyJbThNE6Edjj74JUFDdWy";
         nStartMasternodePayments = 1519010250;
     }
 

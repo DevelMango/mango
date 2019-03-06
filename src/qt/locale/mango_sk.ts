@@ -3757,8 +3757,8 @@ napríklad: alertnotify=echo %%s | mail -s "mango Upozornenie" admin@foo.com
         <translation>Uzle na zoznam povolených nemôžu byť DoS zakázané a ich transakcie vždy postúpené ďalej, aj v prípade, ak sú už pamäťovej fronte. Užitočné napr. pre brány</translation>
     </message>
     <message>
-        <source>(16555 could be used only on mainnet)</source>
-        <translation>(16555 nemôže byť použité pre hlavnú sieť)</translation>
+        <source>(17555 could be used only on mainnet)</source>
+        <translation>(17555 nemôže byť použité pre hlavnú sieť)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4179,8 +4179,8 @@ napríklad: alertnotify=echo %%s | mail -s "mango Upozornenie" admin@foo.com
         <translation>Neplatný masternodeprivkey. Prosím pozrite do dokumentácie.</translation>
     </message>
     <message>
-        <source>(must be 16555 for mainnet)</source>
-        <translation>(pre hlavnú sieť musí byť 16555)</translation>
+        <source>(must be 17555 for mainnet)</source>
+        <translation>(pre hlavnú sieť musí byť 17555)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>

@@ -3654,8 +3654,8 @@ https://www.transifex.com/mangocoin/mango-wallet-translations/</translation>
         <translation>Aviso: Por favor verifique que a data e a hora do computador está correcta! Se o relógio estiver errado o mango Core não vai funcionar correctamente.</translation>
     </message>
     <message>
-        <source>(16555 could be used only on mainnet)</source>
-        <translation>(16555 apenas pode ser usado para mainnet)</translation>
+        <source>(17555 could be used only on mainnet)</source>
+        <translation>(17555 apenas pode ser usado para mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4068,8 +4068,8 @@ https://www.transifex.com/mangocoin/mango-wallet-translations/</translation>
         <translation>masternodeprivkey inválida. Por favor reveja a documentação.</translation>
     </message>
     <message>
-        <source>(must be 16555 for mainnet)</source>
-        <translation>(deve ser 16555 para mainnet)</translation>
+        <source>(must be 17555 for mainnet)</source>
+        <translation>(deve ser 17555 para mainnet)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>

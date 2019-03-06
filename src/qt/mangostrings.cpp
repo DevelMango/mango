@@ -205,10 +205,10 @@ static const char UNUSED* mango_strings[] = {
     QT_TRANSLATE_NOOP("mango-core", ""
                                    "You must specify a masternodeprivkey in the configuration. Please see "
                                    "documentation for help."),
-    QT_TRANSLATE_NOOP("mango-core", "(16555 could be used only on mainnet)"),
+    QT_TRANSLATE_NOOP("mango-core", "(17555 could be used only on mainnet)"),
     QT_TRANSLATE_NOOP("mango-core", "(default: %s)"),
     QT_TRANSLATE_NOOP("mango-core", "(default: 1)"),
-    QT_TRANSLATE_NOOP("mango-core", "(must be 16555 for mainnet)"),
+    QT_TRANSLATE_NOOP("mango-core", "(must be 17555 for mainnet)"),
     QT_TRANSLATE_NOOP("mango-core", "<category> can be:\n"),
     QT_TRANSLATE_NOOP("mango-core", "Accept command line and JSON-RPC commands"),
     QT_TRANSLATE_NOOP("mango-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

@@ -3749,8 +3749,8 @@ for example: alertnotify=echo %%s | mail -s "mango Alert" admin@foo.com
         <translation>Whitelisted не могат да бъдат DoS забранени и техните транзакции ще бъдат винаги предадени, дори ако вече са в  mempool, полезно напр. за gateway</translation>
     </message>
     <message>
-        <source>(16555 could be used only on mainnet)</source>
-        <translation>(16555 може да бъде използван в основната мрежа)</translation>
+        <source>(17555 could be used only on mainnet)</source>
+        <translation>(17555 може да бъде използван в основната мрежа)</translation>
     </message>
     <message>
         <source>(default: %s)</source>

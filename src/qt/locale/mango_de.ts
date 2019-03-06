@@ -3757,8 +3757,8 @@ zum Beispiel: alertnotify=echo %%s | mail -s \"mango Alert\" admin@foo.com</tran
         <translation>Erlaubte Gegenstellen können nicht wegen DoS ausgeschlossen werden und ihre Transaktionen werden immer weitergeleitet, sogar wenn sie schon im Memory-Pool sind. Dies ist z.B. für Gateways nützlich.</translation>
     </message>
     <message>
-        <source>(16555 could be used only on mainnet)</source>
-        <translation>(16555 kann nur im Standarmngoz benutzt werden)</translation>
+        <source>(17555 could be used only on mainnet)</source>
+        <translation>(17555 kann nur im Standarmngoz benutzt werden)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4180,8 +4180,8 @@ mango Core wird heruntergefahren.</translation>
         <translation>Masternode-Geheimschlüssel (masternodeprivkey) ist ungültig. Siehe Dokumentation. </translation>
     </message>
     <message>
-        <source>(must be 16555 for mainnet)</source>
-        <translation>(muss für Standarmngoz 16555 sein)</translation>
+        <source>(must be 17555 for mainnet)</source>
+        <translation>(muss für Standarmngoz 17555 sein)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>

@@ -62,7 +62,7 @@ SOCKSPolicy accept 127.0.0.1/8
 Log notice file /var/log/tor/notices.log
 ControlPort 9051
 HiddenServiceDir /var/lib/tor/dnet/
-HiddenServicePort 989 127.0.0.1:16555
+HiddenServicePort 989 127.0.0.1:17555
 HiddenServiceStatistics 0
 ORPort 9001
 LongLivedPorts 989
@@ -72,7 +72,7 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your mangod's P2P listen port (16555 by default).
+your mangod's P2P listen port (17555 by default).
 
 ```
 -externalip=X   You can tell mango about its publicly reachable address using
@@ -108,7 +108,7 @@ specify:
 ./mangod ... -discover
 ```
 
-and open port 16555 on your firewall (or use -upnp).
+and open port 17555 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
