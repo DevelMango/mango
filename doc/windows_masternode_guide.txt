@@ -12,16 +12,19 @@ MASTERNODE GUIDE FOR WINDOWS
 rpcuser=ANYTHINGHERE
 rpcpassword=ANYTHINGHERE
 listen=1
+server=1
+daemon=1
 allowip=127.0.0.1
 masternode=1
-masternodeaddr=YourIP:17555
+externalip=YOURIP
+masternodeaddr=127.0.0.1:17555
 masternodeprivkey=PRIVATEKEYREPLACETHIS
 
 
 8.Now save and close the config file. 
 9. Open Masternode.conf. This config file is located at C:/users/***Your windows username***/appdata(hidden)/roaming/mango/masternode.conf  Then paste in the following.
 
-mn1 YOURIP:17555 PRIVATEKEYREPLACETHIS INSERTYOURTXID 0
+mn1 127.0.0.1:17555 PRIVATEKEYREPLACETHIS INSERTYOURTXID 0
 
 10. if you dont know where to find your Transaction ID (TXID), just open your wallet, go to transactions and double click to the 1000 mango transaction, the you will see the TXID. 
 11. save and close masternode.conf
